@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+<title>Website Sistem Perbengkelan</title>
+      
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+
+<body>
+<div class="container-fluid">
+  <div class="row"> 
+    <div id="gambar" class="col-md-1">
+      <img src="images/bengkel1.png">
+    </div>
+      <div class="col-md-11">
+            <h1 id="title">Sistem Informasi Perbengkelan</h1>
+      </div>
+  </div>
+    <div class="row">
+      <div id="tengah" class="col-md-12">
+        <h3>Halaman Operator</h3>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col-md-12" id="header">
+        <a href="operator.html">Profil</a>
+        <a href="login_operator.html">Logout</a>
+      </div>
+    </div>
+        <div class="row">
+          <div id="kiriin" class="col-md-2">
+            <div class="tabel">
+              <ul>
+                <li>
+                  <a href="operatorservis.html"><h4>Pengelolaan Order Servis</h4></a>
+                </li>
+                <li>
+                 <a href="operatorsukucadang.html"><h4>Penjualan Suku Cadang</h4></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="isi" class="col-md-10">
+          <h3>Pembayaran</h3>
+          <div class="col-md-12">
+    <table border="3" cellspacing="0" cellpadding="10" border-color="white">
+    <tr>
+      <th width="100">Nama</th>
+      <th width="200">Plat Kendaraan</th>
+      <th width="200">Suku Cadang</th>
+      <th width="100">Jumlah</th>
+      <th width="100">Harga</th>
+      <th width="100">Total Biaya</th>
+      <th width="100">Opsi</th>
+    </tr>
+    <tr>
+      <td>Reiza</td>
+      <td>KB 0032 W</td>
+      <td>1. Knalpot racing <br> 2. Spion</td>
+      <td>1<br>1</td>
+      <td>Rp 350.000<br>Rp 50.000</td>
+      <td>Rp 400.000</td>
+      <td><button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></td>
+    </tr>
+    <tr>
+      <td colspan="5">Jumlah Total</td>
+      <td>Rp. 350.000</td>
+    </tr>
+    <tr>
+      <td colspan="5">Masukkan Jumlah Bayar</td>
+      <td><input type="text" name="bayar"></td>
+    </tr>
+    <tr>
+      <td colspan="5">Kembalian</td>
+      <td></td>
+    </tr>
+    </table><br>
+    </div>
+    <div>
+      <h4>Pilih Metode Pembayaran</h4>
+      <select>
+      <option>Cash</option>
+      <option>Payment Gateway</option>
+      </select>
+    </div>
+    <div id="tombolbayar">
+    <a href="operatorsukucadang.html"><button type="button" class="btn btn-info" onclick="tombol2()">Proses</button></a></div><br>
+    <div id="tombolkwitansi">
+    <a href="kwitansisc.html"><button type="button" class="btn btn-info">Lihat Kwitansi</button></a>
+    </div>
+    </div>
+    <div class="row">
+    <div id="footer" class="col-md-12">
+      <h5 align="center">Copyright&copy; by  Albert Dicky Tamara</h5> 
+    </div>
+    <script>
+    function tombol() {
+    alert('Berhasil dihapus');
+    }
+    function tombol2() {
+    alert('Transaksi Berhasil');
+    }
+    </script>
+    </div>
+  </div>
+  </body>
+
+<html>

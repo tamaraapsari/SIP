@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+<title>Website Sistem Perbengkelan</title>
+      
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+
+<body>
+<div class="container-fluid">
+  <div class="row"> 
+    <div id="gambar" class="col-md-1">
+      <img src="images/bengkel1.png">
+    </div>
+      <div class="col-md-11">
+            <h1 id="title">Sistem Informasi Perbengkelan</h1>
+      </div>
+  </div>
+    <div class="row">
+      <div id="tengah" class="col-md-12">
+        <h3>Halaman Operator</h3>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col-md-12" id="header">
+        <a href="operator.html">Profil</a>
+        <a href="login_operator.html">Logout</a>
+      </div>
+    </div>
+        <div class="row">
+          <div id="kiriin" class="col-md-2">
+            <div class="tabel">
+              <ul>
+                <li>
+                  <a href="operatorservis.html"><h4>Pengelolaan Order Servis</h4></a>
+                </li>
+                <li>
+                 <a href="operatorsukucadang.html"><h4>Penjualan Suku Cadang</h4></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="isi" class="col-md-10">
+          <h3>Penjualan Suku cadang</h3>
+            <h5><a href="optambahsc.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Daftarkan Order Suku Cadang</a></h5>
+            <table class="table table-bordered" border-color="black">
+              <tr>
+                <th width="50">Nomor Antrian</th>
+                <th width="50">Plat Kendaraan</th>
+                <th width="100">Nama Pelanggan</th>
+                <th width="100">Status Member</th>
+                <th width="200">Nama Suku Cadang</th>
+                <th width="50">Jumlah</th>
+                <th width="150">Aksi</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>KB 0032 M</td>
+                <td>Reiza</td>
+                <td>Member Lama</td>
+                <td>1. Knalpot racing <br> 2. Spion</td>
+                <td>1<br>1</td>
+                <td><a href="editsc.html">
+                    <button type="button" class="btn btn-warning">Edit</button></a>
+                    <a href="#">
+                    <button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></a>
+                    <a href="bayarsc.html">
+                    <button type="button" class="btn btn-info">Bayar</button></a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>KB 0033 M</td>
+                <td>Wakseh</td>
+                <td>Member Baru</td>
+                <td>1.Gear <br> 2. Rantai</td>
+                <td>1<br>1</td>
+                <td><a href="editsc1.html">
+                    <button type="button" class="btn btn-warning">Edit</button></a>
+                    <a href="#">
+                    <button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></a>
+                    <a href="bayarsc1.html">
+                    <button type="button" class="btn btn-info">Bayar</button></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    <div class="row">
+    <div id="footer" class="col-md-12">
+      <h5 align="center">Copyright&copy; by  Albert Dicky Tamara</h5> 
+    </div>
+    </div>
+  </div>
+  <script>
+    function tombol() {
+    confirm("Apakah anda setuju?");
+    }
+  </script>
+  </body>
+
+<html>

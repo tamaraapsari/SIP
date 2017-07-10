@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+<title>Website Sistem Perbengkelan</title>
+      
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+
+<body>
+<div class="container-fluid">
+  <div class="row"> 
+    <div id="gambar" class="col-md-1">
+      <img src="images/bengkel1.png">
+    </div>
+      <div class="col-md-11">
+            <h1 id="title">Sistem Informasi Perbengkelan</h1>
+      </div>
+  </div>
+    <div class="row">
+      <div id="tengah" class="col-md-12">
+        <h3>Halaman Teknisi</h3>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col-md-12" id="header">
+        <a href="teknisi.html">Profil</a>
+        <a href="login_teknisi.html">Logout</a>
+      </div>
+    </div>
+        <div class="row">
+          <div id="kiriin" class="col-md-2">
+            <div class="tabel">
+              <ul>
+                <li>
+                  <a href="olahserviskendaraan.html"><h4>Olah Servis Kendaraan</h4></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="isi" class="col-md-10">
+          <h3>Olah Servis Kendaraan</h3>
+          <table class="table table-bordered" border-color="black">
+              <tr>
+                <th>Nomor Antrian</th>
+                <th>Kode Servis</th>
+                <th>Nama Pelanggan</th>
+                <th>Status Member</th>
+                <th>Keterangan</th>
+                <th>Aksi</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>KB 0032 M</td>
+                <td>Reiza</td>
+                <td>Member Lama</td>
+                <td>Belum Ditangani</td>
+                <td><a href="teknisiservis.html">
+                    <button type="button" class="btn btn-warning">Tangani Pesanan Ini</button></a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>KB 0033 M</td>
+                <td>Wakseh</td>
+                <td>Member Baru</td>
+                <td>Belum Ditangani</td>
+                <td><a href="teknisiservis2.html">
+                    <button type="button" class="btn btn-warning">Tangani Pesanan Ini</button></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    <div class="row">
+    <div id="footer" class="col-md-12">
+      <h5 align="center">Copyright&copy; by  Albert Dicky Tamara</h5> 
+    </div>
+    </div>
+  </div>
+  <script>
+    function tombol() {
+    confirm("Apakah anda setuju?");
+    }
+  </script>
+  </body>
+
+<html>

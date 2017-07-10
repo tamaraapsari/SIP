@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+<title>Website Sistem Perbengkelan</title>
+      
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  </head>
+
+<body>
+<div class="container-fluid">
+  <div class="row"> 
+    <div id="gambar" class="col-md-1">
+      <img src="images/bengkel1.png">
+    </div>
+      <div class="col-md-11">
+            <h1 id="title">Sistem Informasi Perbengkelan</h1>
+      </div>
+  </div>
+    <div class="row">
+      <div id="tengah" class="col-md-12">
+        <h3>Halaman Operator</h3>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col-md-12" id="header">
+        <a href="operator.html">Profil</a>
+        <a href="login_operator.html">Logout</a>
+      </div>
+    </div>
+        <div class="row">
+          <div id="kiriin" class="col-md-2">
+            <div class="tabel">
+              <ul>
+                <li>
+                  <a href="operatorservis.html"><h4>Pengelolaan Order Servis</h4></a>
+                </li>
+                <li>
+                 <a href="operatorsukucadang.html"><h4>Penjualan Suku Cadang</h4></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="isi" class="col-md-10">
+          <h3>Pendaftaran Servis</h3>
+            <div class="form-group">
+              <label for="inputnmmember" class="col-sm-2 control-label">Nomor Antrian</label>
+            <div class="col-sm-4">
+            <input type="member" class="form-control" id="inputnmmember" placeholder="Masukkan Nomor Antrian">
+            </div><br> <br>
+            </div>
+            <div class="form-group">
+              <label for="inputservis" class="col-sm-2 control-label">Plat Kendaraan</label>
+            <div class="col-sm-4">
+            <input type="member" class="form-control" id="inputservis" placeholder="Masukkan Plat Kendaraan">
+            </div><br> <br>
+            </div>
+            <div class="form-group">
+              <label for="inputpelanggan" class="col-sm-2 control-label">Nama Pelanggan</label>
+            <div class="col-sm-4">
+            <input type="member" class="form-control" id="inputpelanggan" placeholder="Masukkan Nama Pelanggan">
+            </div><br> <br>
+            </div>
+            <div class="form-group">
+              <label for="pilih" class="col-sm-2 control-label">Status Member</label>
+            <div class="col-sm-4">
+              <select class="form-control">
+                <option>Member lama</option>
+                <option>Member baru</option>
+              </select>
+            </div><br>
+           <br><div class="form-group">
+           <div class="col-sm-10">
+           <table class="table table-bordered" border-color="black">
+             <tr>
+              <td width="200">Nama Suku Cadang</td>
+              <td width="200">Jumlah</td>
+              <td width="200"><button class="glyphicon glyphicon-plus" aria-hidden="true" data-toggle="modal" data-target="#myModal">Tambah Suku Cadang</button></td>
+             </tr>
+             <tr>
+               <td>Knalpot Racing</td>
+               <td>1</td>
+               <td><a href="#">
+                  <button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></a>
+                </td>
+             </tr>
+             <tr>
+               <td>Spion</td>
+               <td>1</td>
+               <td>
+                 <a href="#">
+                    <button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></a>
+               </td>
+             </tr>
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                  <label for="namaitem"><h4>Nama Suku Cadang</h4></label><br>
+                  <select name="namaitem" id="namaitem">
+                    <option value="a">Stang</option>
+                    <option value="b">Gear</option>
+                    <option value="c">Spion</option>
+                    <option value="d">Rantai</option>
+                    <option value="e">Knalpot Racing</option>
+                  </select><br>
+                  <label for="bitem"><h4>Jumlah</h4></label><br>
+                  <input type="bitem" name="bitem" size="13"><br>
+                  <br><a href="optambahsc.html"><button type="button" class="btn btn-default">Tambah</button></a>
+                </div>
+              </div>
+            </div>
+           </table>
+            </div>
+            </div>
+            <div class="col-sm-4">
+            <a href="operatorsukucadang.html"><button type="button" class="btn btn-info">Submit</button></a>
+            </div>
+          </div>
+        </div>
+    <div class="row">
+    <div id="footer" class="col-md-12">
+      <h5 align="center">Copyright&copy; by  Albert Dicky Tamara</h5> 
+    </div>
+    </div>
+  </div>
+  <script>
+    function tombol() {
+    confirm("Apakah anda setuju?");
+    }
+  </script>
+  </body>
+
+<html>

@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+<title>Website Sistem Perbengkelan</title>
+      
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  </head>
+
+<body>
+<div class="container-fluid">
+  <div class="row"> 
+    <div id="gambar" class="col-md-1">
+      <img src="images/bengkel1.png">
+    </div>
+      <div class="col-md-11">
+            <h1 id="title">Sistem Informasi Perbengkelan</h1>
+      </div>
+  </div>
+    <div class="row">
+      <div id="tengah" class="col-md-12">
+        <h3>Halaman Kepala Gudang</h3>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col-md-12" id="header">
+        <a href="kepalagudang.html">Profil</a>
+        <a href="login_kepala_gudang.html">Logout</a>
+      </div>
+    </div>
+        <div class="row">
+          <div id="kiriin" class="col-md-2">
+            <div class="tabel">
+              <ul>
+                <li>
+                  <a href="olahstokgdg.html"><h4>Olah Stok Gudang</h4></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="isi" class="col-md-10">
+          <h3>Olah Stok Gudang</h3>
+          <br>
+          <h3>Daftar Suku Cadang</h3>
+          <div id="tbh">
+          <h4>Tambah Suku Cadang <button type="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span></button></h4>
+          </div>
+            <table border="1" class="table">
+              <thead>
+                <tr>
+                  <th align="center">ID Suku Cadang</th>
+                  <th align="center">Nama Produk</th>
+                  <th align="center">Merek</th>
+                  <th align="center">Supplier</th>
+                  <th align="center">Harga</th>
+                  <th align="center">Jumlah</th>
+                  <th align="center">Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SC_02</td>
+                  <td>Ban</td>
+                  <td>Star Motor</td>
+                  <td>CV.Indah Kencana</td>
+                  <td>180.000</td>
+                  <td>20</td>
+                  <td>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Edit</button>
+                    <a href="detailban.html"><button type="button" class="btn btn-info">Detail</button></a>
+                    <button type="buton" class="btn btn-danger" onclick="tombol()">Hapus</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>SC_02</td>
+                  <td>Oli</td>
+                  <td>Top 1</td>
+                  <td>CV.Surya</td>
+                  <td>23.000</td>
+                  <td>25</td>
+                  <td>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Edit</button>
+                    <a href="detailoli.html"><button type="button" class="btn btn-info">Detail</button></a>
+                    <button type="buton" class="btn btn-danger" onclick="tombol()">Hapus</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>SC_03</td>
+                  <td>Knalpot</td>
+                  <td>Star Motor</td>
+                  <td>CV.Indah Kencana</td>
+                  <td>350.000</td>
+                  <td>20</td>
+                  <td>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Edit</button>
+                    <a href="detailknalpot.html"><button type="button" class="btn btn-info">Detail</button></a>
+                    <button type="buton" class="btn btn-danger" onclick="tombol()">Hapus</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>SC_04</td>
+                  <td>Velg</td>
+                  <td>Star Motor</td>
+                  <td>CV.Indah Kencana</td>
+                  <td>200.000</td>
+                  <td>10</td>
+                  <td>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Edit</button>
+                    <a href="detailvelg.html"><button type="button" class="btn btn-info">Detail</button></a>
+                    <button type="buton" class="btn btn-danger" onclick="tombol()">Hapus</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>SC_05</td>
+                  <td>Body</td>
+                  <td>Star Motor</td>
+                  <td>CV.Indah Kencana</td>
+                  <td>400.000</td>
+                  <td>10</td>
+                  <td>
+                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Edit</button>
+                    <a href="detailbody.html"><button type="button" class="btn btn-info">Detail</button></a>
+                    <button type="buton" class="btn btn-danger" onclick="tombol()">Hapus</button>
+                  </td>
+                </tr>
+            </table>
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                  <label for="namaitem"><h4>ID Suku Cadang</h4></label><br>
+                    <input type="text" name="namaitem"><br>
+                  <label for="bitem"><h4>Nama Produk</h4></label><br>
+                    <input type="bitem" name="bitem"><br>
+                  <label for="merk"><h4>Merk</h4></label><br>
+                    <input type="merk" name="merk"><br>
+                  <label for="Supplier"><h4>Supplier</h4></label><br>
+                    <input type="Supplier" name="Supplier"><br>
+                  <label for="Harga"><h4>Harga</h4></label><br>
+                    <input type="harga" name="harga"><br>
+                  <label for="Jumlah"><h4>Jumlah</h4></label><br>
+                    <input type="Jumlah" name="Jumlah"><br>
+                  <br><a href="olahstokgdg.html"><button type="button" class="btn btn-default">Konfirmasi</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="row">
+    <div id="footer" class="col-md-12">
+      <h5 align="center">Copyright&copy; by  Albert Dicky Tamara</h5> 
+    </div>
+    </div>
+  </div>
+  <script>
+    function tombol() {
+    confirm("Apakah anda setuju?");
+    }
+  </script>
+  </body>
+
+<html>

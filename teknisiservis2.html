@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+<title>Website Sistem Perbengkelan</title>
+      
+  <head>
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  </head>
+
+<body>
+<div class="container-fluid">
+  <div class="row"> 
+    <div id="gambar" class="col-md-1">
+      <img src="images/bengkel1.png">
+    </div>
+      <div class="col-md-11">
+            <h1 id="title">Sistem Informasi Perbengkelan</h1>
+      </div>
+  </div>
+    <div class="row">
+      <div id="tengah" class="col-md-12">
+        <h3>Halaman Teknisi</h3>
+      </div>
+    </div>
+    <div class="row">  
+      <div class="col-md-12" id="header">
+        <a href="teknisi.html">Profil</a>
+        <a href="login_teknisi.html">Logout</a>
+      </div>
+    </div>
+        <div class="row">
+          <div id="kiriin" class="col-md-2">
+            <div class="tabel">
+              <ul>
+                <li>
+                  <a href="olahserviskendaraan.html"><h4>Olah Servis Kendaraan</h4></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="isi" class="col-md-10">
+          <h3>Servis Kendaraan</h3><br>
+          <h4>Keterangan Servis</h4>
+          <textarea rows="5" cols="40"></textarea>
+          <h4>Pemakaian Suku Cadang <button type="button" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span></button></h4>
+          <table class="table table-bordered" border-color="black">
+            <tr>
+              <th width="200">Nama Suku Cadang</th>
+              <th width="50">qty</th>
+              <th width="200">Aksi</th>
+            </tr>
+            <tr>
+              <td>Stang</td>
+              <td>1</td>
+              <td>
+                <a href="#">
+                  <button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></a>
+                <a href="#">
+                  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Ubah</button></a>
+              </td>
+            </tr>
+            <tr>
+              <td>Lampu</td>
+              <td>1</td>
+              <td>
+                <a href="#">
+                  <button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button></a>
+                <a href="#">
+                  <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Ubah</button></a>
+              </td>
+            </tr>
+          </table>
+          <div>
+          <h6>Status</h6>
+            <select>
+              <option>Belum Selesai</option>
+              <option>Selesai</option>
+            </select>
+          </div><br>
+          <div>
+            <a href="olahserviskendaraan.html"><button class="button btn btn-info" onclick="tombol2()">Proses</button></a>
+          </div><br>
+          </div>
+          <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                  <label for="namaitem"><h4>Nama Suku Cadang</h4></label><br>
+                  <select name="namaitem" id="namaitem">
+                    <option value="a">Stang</option>
+                    <option value="b">Gear</option>
+                    <option value="c">Spion</option>
+                    <option value="d">Rantai</option>
+                    <option value="e">Knalpot Racing</option>
+                    <option value="f">Arang Aki</option>
+                    <option value="g">Lampu</option>
+                  </select><br>
+                  <label for="bitem"><h4>Jumlah</h4></label><br>
+                  <input type="bitem" name="bitem" size="13"><br>
+                  <br><a href="teknisiservis.html"><button type="button" class="btn btn-default">Tambah</button></a>
+                </div>
+              </div>
+            </div>
+        </div>
+    <div class="row">
+    <div id="footer" class="col-md-12">
+      <h5 align="center">Copyright&copy; by  Albert Dicky Tamara</h5> 
+    </div>
+    </div>
+  </div>
+  <script>
+    function tombol() {
+    confirm("Apakah anda setuju?");
+    }
+    function tombol2(){
+    alert("Data Berhasil Diproses")
+    }
+  </script>
+  </body>
+
+<html>
