@@ -1,0 +1,68 @@
+#header{
+	background-color: grey;
+	height: 30px;
+	text-align: right;
+}
+#header a{
+	color: white;
+	border-right: 2px solid #030303;
+	border-left: 2px solid #030303;
+	font-size: 18px;
+	padding-left: 5px;
+	padding-right: 5px;  
+
+}
+#title{
+	text-align: center;
+}
+#kiri{
+	height: 283px;
+
+}
+h1{
+	color: #1f2360;
+	font-size: 70px;
+}
+#tengah{
+	text-align: center;
+	background-color: grey;
+	color: white;
+	height: 48px;
+	padding-bottom: 20px;
+}
+#tbh{
+	text-align: right;
+}
+#isi h5{
+	text-align: right;
+}
+#gambar img{
+	height: 130px;
+	padding-bottom:10px;
+	padding-left: 20px;
+}
+#footer{
+	background-color: grey;
+}
+#kiri-login{
+	height: 630px;
+}
+#kiri-operator{
+	height:530px;
+}
+#kiriin{
+	list-style-type: none;
+	height:452px;
+}
+#kiriin .tabel li{
+	list-style-type: none;
+}
+#tombolbayar{
+	margin-left: 713px;
+}
+#tombolkwitansi{
+	margin-left: 713px;
+}
+#kirinn{
+	font-size: 30px;
+}
