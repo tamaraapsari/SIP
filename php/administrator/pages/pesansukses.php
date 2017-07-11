@@ -1,0 +1,1 @@
+<h2>Selamat, berita anda telah ditambahkan</h2>
