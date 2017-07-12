@@ -3,10 +3,7 @@
             <div class="tabel">
               <ul>
                 <li>
-                  <a href="pengguna.php"><h4>Kelola User</h4></a>
-                </li>
-                <li>
-                  <a href="keuangan.php"><h4>Laporan Keuangan</h4></a>
+                  <a href="tek-service.php"><h4>Olah Servis Kendaraan</h4></a>
                 </li>
               </ul>
             </div>

@@ -3,10 +3,10 @@
             <div class="tabel">
               <ul>
                 <li>
-                  <a href="pengguna.php"><h4>Kelola User</h4></a>
+                  <a href="operator-service.php"><h4>Pengelolaan Order Servis</h4></a>
                 </li>
                 <li>
-                  <a href="keuangan.php"><h4>Laporan Keuangan</h4></a>
+                 <a href="operatorsukucadang.html"><h4>Penjualan Suku Cadang</h4></a>
                 </li>
               </ul>
             </div>

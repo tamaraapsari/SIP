@@ -31,10 +31,10 @@
           <div class="col-md-6">
             <ul class="nav nav-pills">
               <li class="active">
-                <a href="#">Login Teknisi</a>
+                <a href="teknisi.php">Login Teknisi</a>
               </li>
               <li class="active">
-                <a href="#">Login Operator</a>
+                <a href="operator.php">Login Operator</a>
               </li>
               <li class="active">
                 <a href="#">Login Kepala gudang</a>
