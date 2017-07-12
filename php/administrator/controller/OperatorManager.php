@@ -29,5 +29,32 @@ class OperatorManager extends Controller
 		return true;
 
 	}
+
+	public function listService()
+	{
+		$id= $_GET['id'];
+		include_once 'model/Operator.php';
+		$mb= new Operator();
+		$data = $mb->listService($id);
+		return $data;
+	}
+
+	public function hitungService()
+	{
+		$id= $_GET['id'];
+		include_once 'model/Operator.php';
+		$mb= new Operator();
+		$data = $mb->hitungService($id);
+		return $data;
+	}
+
+	public function listSC()
+	{
+		$id= $_GET['id'];
+		include_once 'model/Operator.php';
+		$mb= new Operator();
+		$data = $mb->listSC($id);
+		return $data;
+	}
 }
  ?>

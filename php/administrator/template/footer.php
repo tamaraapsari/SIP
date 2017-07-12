@@ -7,7 +7,14 @@
   </div>
   <script>
     function tombol() {
-    confirm("Apakah anda setuju?");
+      confirm("Apakah anda setuju?");
+    }
+
+  </script>
+
+  <script type="text/javascript">
+    function hitung() {
+      document.form1.kembali.value = document.form1.bayar.value - document.form1.harga.value;
     }
   </script>
   </body>

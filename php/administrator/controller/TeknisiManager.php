@@ -103,5 +103,17 @@ class TeknisiManager extends Controller
 		return true;
 
 	}
+
+	public function selesaiService()
+	{
+		include_once 'model/Teknisi.php';
+		$mb= new Teknisi();
+		$id_service = $_GET['id'];
+		$status = 2;
+		$mb->selesaiService($id_service,$status);
+		
+		return true;
+
+	}
 }
  ?>

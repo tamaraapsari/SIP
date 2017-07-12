@@ -12,7 +12,7 @@ class Teknisi extends Model
 	// public $id_berita;
 	public function service()
 	{
-		$query = $this->db->prepare("SELECT * FROM op_service");
+		$query = $this->db->prepare("SELECT * FROM op_service ");
     		$query->execute();
     		$data = $query->fetchAll();
     		return $data;
@@ -164,5 +164,21 @@ class Teknisi extends Model
 			echo $e->getMessage(); 
 		}
 	}
+
+	public function selesaiService($id_service,$status)
+	{
+		try {
+			$stmt = $this->db->prepare("UPDATE op_service SET status=:status WHERE id_service=:id_service");
+			$stmt->bindparam(":id_service",$id_service);
+			$stmt->bindparam(":status",$status);
+			$stmt->execute();
+			echo "Service Selesai";
+			
+		}
+		catch(PDOException $e) {
+			echo $e->getMessage(); 
+		}
+	}
+
 }
  ?>

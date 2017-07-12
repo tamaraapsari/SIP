@@ -52,6 +52,33 @@ class Operator extends Model
 			echo $e->getMessage(); 
 		}
 	}
+
+	public function listService($id)
+	{
+		// $query = $this->db->prepare("SELECT * FROM tek_detail_service WHERE id_service = $id");
+		$query = $this->db->prepare("SELECT jenis_servis.nama_servis,jenis_servis.harga, tek_detail_service.id_detail_service FROM jenis_servis LEFT JOIN tek_detail_service ON jenis_servis.id_servis = tek_detail_service.jns_service WHERE id_service = $id");
+    		$query->execute();
+    		$data = $query->fetchAll();
+    		return $data;
+	}
+
+	public function hitungService($id)
+	{
+		// $query = $this->db->prepare("SELECT * FROM tek_detail_service WHERE id_service = $id");
+		$query = $this->db->prepare("SELECT COUNT(*) AS ngitung FROM tek_detail_service  WHERE id_service = $id");
+    		$query->execute();
+    		$data = $query->fetchAll();
+    		return $data;
+	}
 	
+	public function listSC($id)
+	{
+		// $query = $this->db->prepare("SELECT * FROM tek_detail_service WHERE id_service = $id");
+		$query = $this->db->prepare("SELECT suku_cadang.merk, suku_cadang.harga, tek_detail_sc.qty, tek_detail_sc.id_detail_sc FROM suku_cadang LEFT JOIN tek_detail_sc ON suku_cadang.id_sc = tek_detail_sc.suku_cadang WHERE id_service = $id");
+    		$query->execute();
+    		$data = $query->fetchAll();
+    		return $data;
+	}
+
 }
  ?>

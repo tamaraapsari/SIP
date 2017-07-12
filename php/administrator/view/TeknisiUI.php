@@ -82,6 +82,14 @@ class TeknisiUI extends View
 		$bm= new TeknisiManager();
 		$bm->delSC();
 		$this->end();
-	}	
+	}
+
+	public function selesaiService()
+	{
+		include_once 'controller/TeknisiManager.php';
+		$bm= new TeknisiManager();
+		$bm->selesaiService();
+		$this->end();
+	}
 }
  ?>

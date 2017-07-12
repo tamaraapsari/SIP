@@ -62,16 +62,13 @@
             <tr>
               <th width="200">Nama Suku Cadang</th>
               <th width="50">qty</th>
-              <th width="200">Aksi</th>
+              <th width="9%">Aksi</th>
             </tr>
             <?php foreach ($sc as $sc) { ?>
               <tr>
                 <td><?php echo $sc['merk'] ?></td>
                 <td><?php echo $sc['qty'] ?></td>
                 <td>
-                  <a href="#">
-                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Ubah</button>
-                  </a>
 
                   <a href="tek-del-sc.php?id=<?php echo $sc['id_detail_sc'] ?>&id_service=<?php echo $_GET['id'] ?>">
                     <button type="button" class="btn btn-danger" onclick="tombol();">Hapus</button>
@@ -83,7 +80,7 @@
           </table>
           <div><br>
           <div>
-            <a href="">
+            <a href="tek-selesai.php?id=<?php echo $_GET['id'] ?>">
               <button class="btn btn-primary btn-block">Pekerjaan Selesai</button>
             </a>
           </div><br>

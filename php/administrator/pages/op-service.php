@@ -32,11 +32,11 @@
                                     <button class="btn btn-danger">Batalkan Service</button>
                                 </a>
                             <?php }elseif ($srv['status'] == 1) { ?>
-                                <a href="#">
+                                <a href="op-progress.php?id=<?php echo $srv['id_service'] ?>">
                                     <button class="btn btn-info">Lihat Progress</button>
                                 </a>
                             <?php }elseif ($srv['status'] == 2) { ?>
-                                <a href="#">
+                                <a href="op-pembayaran.php?id=<?php echo $srv['id_service'] ?>">
                                     <button class="btn btn-success">Pembayaran</button>
                                 </a>
                             <?php } ?>
