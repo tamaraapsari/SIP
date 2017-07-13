@@ -99,17 +99,29 @@
             </tbody>
           </table><br>
     </div>
-    <div>
-      <h4>Pilih Metode Pembayaran</h4>
-      <select>
-      <option>Cash</option>
-      <option>Payment Gateway</option>
-      </select>
-    </div>
-    <div id="tombolbayar">
-    <a href="operatorservis.html"><button type="button" class="btn btn-info" onclick="tombol2()">Proses</button></a>
-    </div><br>
-    <div id="tombolkwitansi">
-    <a href="kwitansi1.html"><button type="button" class="btn btn-info">Lihat Kwitansi</button></a>
-    </div>
+    <form action="op-bayar.php" method="POST">
+      <input type="hidden" name="id_service" value="<?php echo $_GET['id'] ?>">
+      <input type="hidden" name="id_op" value="1">
+      <input type="hidden" name="status" value="1">
+      <input type="hidden" name="tot_bayar" value="<?php echo $total ?>">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Pilih Metode Pembayaran</h4>
+          <select name="method" class="form-control">
+            <option value="1">Cash</option>
+            <option value="2">Payment Gateway</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <br><br>
+          <div class="row">
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-info btn-block">Bayar</button>
+            </div>
           </div>
+        </div>
+      </div>
+    </form>
+    <div>
+      </div>
+      <br><br><br>
